@@ -21,7 +21,21 @@ var oBtnRound=$id("round");
 	function imgShow(index){
 		oImg.src=arrPic[index];
 		oDivOrder.innerHTML=arrTxt[index];
-		oDivInfo.innerHTML=arrInfo[index];
+        oDivInfo.innerHTML=arrInfo[index];
+        oDivInfo.style.fontSize="30px";
+        oDivInfo.style.paddingTop="40px";
+        oDivInfo.style.paddingBottom="20px";
+        oDivInfo.style.color="#333";
+        oDivInfo.style.fontFamily="Optima LT W01 Roman";
+        oDivInfo.style.fontWeight="400";
+        oDivInfo.style.letterSpacing=".1em";
+        oDivOrder.style.height="50px";
+        oDivOrder.style.lineHeight="50px";
+        oDivOrder.style.width="260px";
+        oDivOrder.style.fontSize="13px";
+        oDivOrder.style.border="1px solid #333";
+        oDivOrder.style.textAlign="center";
+        oDivOrder.style.margin="0 auto";
 	}
 	imgShow(index);
 	
