@@ -1,0 +1,373 @@
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: "Optima LT W01 Roman", MS PGothic;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    .first {
+        background: #FFFFFF;
+        font-size: 13px;
+        padding-bottom: 23px;
+        display: flex;
+        ul {
+            height: 82px;
+            margin: 0 auto;
+            li {
+                width: 320px;
+                float: left;
+                text-align: center;
+                line-height: 98px;
+                a {
+                    display: block;
+                    color: #666666;
+                }
+            }
+            li:nth-of-type(1),
+            li:nth-of-type(2) {
+                background: url("../../../images/arrow-free-delivery.png") 295px no-repeat
+            }
+        }
+    }
+    .picture {
+        background: #ffffff;
+        width: 100%;
+        .p-c {
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            height: 692px;
+            .btn {
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                box-shadow: 0 2px 2px 1px rgba(48, 37, 52, 0.2);
+                left: 0px;
+            }
+            ul {
+                li {
+                    background: #FFFFFF;
+                    position: absolute;
+                    text-align: center;
+                    p {
+                        padding-top: 40px;
+                        padding-bottom: 20px;
+                        color: #333;
+                        font-family: "Optima LT W01 Roman";
+                        font-weight: 400;
+                        font-size: 30px;
+                        letter-spacing: .1em;
+                    }
+                    span {
+                        height: 50px;
+                        line-height: 50px;
+                        width: 260px;
+                        font-size: 13px;
+                        border: 1px solid #333;
+                        text-align: center;
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0 auto;
+                        white-space: nowrap;
+                        margin-bottom: 20px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: .10em;
+                        margin-bottom: 80px;
+                    }
+                }
+            }
+            .prev {
+                left: -30px;
+                top: 190px;
+                background: url("../../../images/prev.bmp") no-repeat #FFFFFF;
+            }
+            .next {
+                left: 930px;
+                top: 190px;
+                background: url("../../../images/next.bmp") no-repeat #FFFFFF;
+            }
+        }
+    }
+    .suggest {
+        background: #FFFFFF;
+        .s-c {
+            width: 960px;
+            margin: 0 auto;
+            font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 4px;
+            background: #FFFFFF;
+            span {
+                margin-left: 75px;
+            }
+            a {
+                text-align: right;
+                color: #333;
+                float: right;
+                font-size: 13px;
+                background: url(../../../images/more.bmp) right -8px no-repeat;
+                line-height: 20px;
+                padding-right: 25px;
+            }
+        }
+    }
+    .production {
+        background: #FFFFFF;
+        padding-bottom: 15px;
+        .u1 {
+            width: 960px;
+            height: 180px;
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+            background: #FFFFFF;
+            li {
+                float: left;
+                img {
+                    width: 120px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                a {
+                    font-family: "Optima LT W01 Roman", MS PGothic;
+                    p {
+                        font-size: 12px;
+                        line-height: 1em;
+                        color: #7b7b7b;
+                        font-style: italic;
+                        height: 36px;
+                        margin: 0 0 7px;
+                        padding: 0 5px;
+                        overflow: hidden;
+                    }
+                    span {
+                        height: 15px;
+                        color: #999;
+                        font-size: 12px;
+                        position: relative;
+                        text-align: center;
+                        font-family: "Optima LT W01 Roman", MS PGothic;
+                    }
+                }
+            }
+        }
+    }
+    .shoulian {
+        background: #FFFFFF;
+        font-family: "Optima LT W01 Roman";
+        .s-c {
+            width: 960px;
+            margin: 0px 145px 0px;
+            .sl1 {
+                display: flex;
+                text-align: center;
+                justify-content: space-between;
+                padding-bottom: 35px;
+                font-size: 24px;
+                color: #333;
+                .s1,
+                .s2 {
+                    position: relative;
+                    .get {
+                        font-family: "Optima LT W01 Roman";
+                        font-weight: 400;
+                        letter-spacing: .1em;
+                        position: absolute;
+                        width: 380px;
+                        height: 85px;
+                        right: 40px;
+                        bottom: 60px;
+                        p {
+                            margin-bottom: 20px;
+                        }
+                        a {
+                            height: 30px;
+                            line-height: 35px;
+                            width: 220px;
+                            font-size: 11px;
+                            border: 1px solid #333;
+                            text-align: center;
+                            display: inline-block;
+                            text-align: center;
+                            margin: 0 auto;
+                            white-space: nowrap;
+                            padding: 0 20px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            letter-spacing: .10em;
+                            background: transparent;
+                            border: 1px solid #333;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+            .sl2 {
+                position: relative;
+                text-align: center;
+                .get {
+                    position: absolute;
+                    width: 420px;
+                    height: 85px;
+                    left: 40px;
+                    bottom: 60px;
+                    p {
+                        font-family: "Optima LT W01 Roman";
+                        font-weight: 400;
+                        color: white;
+                        margin-bottom: 17px;
+                        font-size: 24px;
+                        letter-spacing: .1em;
+                    }
+                    a {
+                        height: 35px;
+                        line-height: 35px;
+                        width: 260px;
+                        font-size: 11px;
+                        text-align: center;
+                        display: inline-block;
+                        text-align: center;
+                        padding: 0 20px;
+                        text-transform: uppercase;
+                        letter-spacing: .10em;
+                        background: transparent;
+                        border: 1px solid #fff;
+                        color: #fff;
+                    }
+                }
+            }
+            .sl3 {
+                margin-top: 35px;
+            }
+        }
+    }
+    .love {
+        background: #FFFFFF;
+        .l-c {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+            h2 {
+                font-size: 30px;
+                margin-bottom: 18px;
+                padding: 0 60px;
+                font-family: "Optima LT W01 Roman";
+                font-weight: 400;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                line-height: 1.25;
+            }
+            .p1 {
+                font-family: "Optima LT W01 Roman";
+                font-weight: 400;
+                margin: 0;
+                font-size: 16px;
+                line-height: 1.25;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .box {
+                background: #FFFFFF;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                .left {
+                    .qiu {
+                        position: absolute;
+                        left: 20px;
+                        top: 313px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 13px;
+                        border: 1px solid #333;
+                        padding: 0 20px;
+                        letter-spacing: .10em;
+                        background: transparent;
+                        a {
+                            display: block;
+                        }
+                    }
+                    .description {
+                        width: 354px;
+                        height: 195px;
+                        padding: 60px;
+                        h3 {
+                            font-family: "Optima LT W01 Roman";
+                            font-weight: 400;
+                            letter-spacing: .1em;
+                            font-size: 30px;
+                        }
+                        p:nth-of-type(1) {
+                            box-sizing: border-box;
+                            padding-top: 16px;
+                            padding-bottom: 16px;
+                            margin-top: 16px;
+                            font-family: "Optima LT W01 Roman";
+                            font-weight: 400;
+                            margin: 0;
+                            font-size: 16px;
+                        }
+                        p:nth-of-type(2) {
+                            width: 354px;
+                            font-family: "Optima LT W01 Roman";
+                            font-size: 16px;
+                            color: #333;
+                        }
+                        div {
+                            margin-top: 15px;
+                            a {
+                                background: #333;
+                                border: 1px solid #333;
+                                color: #fff;
+                                height: 35px;
+                                line-height: 35px;
+                                font-size: 11px;
+                                border: 1px solid #333;
+                                text-align: center;
+                                display: inline-block;
+                                padding: 0 20px;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    position: relative;
+                    .qiu {
+                        position: absolute;
+                        left: 20px;
+                        bottom: 20px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 13px;
+                        border: 1px solid #333;
+                        padding: 0 20px;
+                        letter-spacing: .10em;
+                        background: transparent;
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
