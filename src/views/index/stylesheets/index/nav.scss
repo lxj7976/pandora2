@@ -22,7 +22,6 @@
                 font-size: 15px;
                 width: 100%;
                 padding: 0;
-                background:pink;
                 li{
                     font-size: 12px;
                     border-left: 1px solid transparent;
@@ -35,7 +34,8 @@
                     text-align: center;
                     position: relative;
                     white-space: nowrap;
-                    line-height: 48px;
+                    padding-top:17px;
+                    padding-bottom:16px;
                     a{
                         margin: 0;
                         padding: 17px 0 12px;
