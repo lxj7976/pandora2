@@ -63,38 +63,7 @@ a {
                     background: #FFFFFF;
                     position: absolute;
                     text-align: center;
-                    // #container{
-                    //     #info{
-                    //         a{
-                    //             span {
-                    //                 height: 50px;
-                    //                 line-height: 50px;
-                    //                 width: 260px;
-                    //                 font-size: 13px;
-                    //                 border: 1px solid #333;
-                    //                 text-align: center;
-                    //                 display: inline-block;
-                    //                 text-align: center;
-                    //                 margin: 0 auto;
-                    //                 white-space: nowrap;
-                    //                 margin-bottom: 20px;
-                    //                 text-decoration: none;
-                    //                 text-transform: uppercase;
-                    //                 letter-spacing: .10em;
-                    //                 margin-bottom: 80px;
-                    //             }
-                    //         }  
-                    //     }
-                    //     p {
-                    //         padding-top: 40px;
-                    //         padding-bottom: 20px;
-                    //         color: #333;
-                    //         font-family: "Optima LT W01 Roman";
-                    //         font-weight: 400;
-                    //         font-size: 30px;
-                    //         letter-spacing: .1em;
-                    //     }
-                    //  }    
+                       
                 }
             }
             .prev {
@@ -138,6 +107,7 @@ a {
     .production {
         background: #FFFFFF;
         padding-bottom: 15px;
+        position: relative;
         .u1 {
             width: 960px;
             height: 180px;
@@ -145,39 +115,64 @@ a {
             text-align: center;
             margin: 0 auto;
             background: #FFFFFF;
-            li {
-                float: left;
-                img {
-                    width: 120px;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                a {
-                    font-family: "Optima LT W01 Roman", MS PGothic;
-                    p {
-                        font-size: 12px;
-                        line-height: 1em;
-                        color: #7b7b7b;
-                        font-style: italic;
-                        height: 36px;
-                        margin: 0 0 7px;
-                        padding: 0 5px;
-                        overflow: hidden;
+            display: flex;
+            
+            ul{
+                position: absolute;
+                overflow: hidden;
+                li {
+                        float: left;
+                        img {
+                            width: 120px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                        a {
+                            font-family: "Optima LT W01 Roman", MS PGothic;
+                            p {
+                                font-size: 12px;
+                                line-height: 1em;
+                                color: #7b7b7b;
+                                font-style: italic;
+                                height: 36px;
+                                margin: 0 0 7px;
+                                padding: 0 5px;
+                                overflow: hidden;
+                            }
+                            span {
+                                height: 15px;
+                                color: #999;
+                                font-size: 12px;
+                                position: relative;
+                                text-align: center;
+                                font-family: "Optima LT W01 Roman", MS PGothic;
+                            }
+                        }
                     }
-                    span {
-                        height: 15px;
-                        color: #999;
-                        font-size: 12px;
-                        position: relative;
-                        text-align: center;
-                        font-family: "Optima LT W01 Roman", MS PGothic;
-                    }
-                }
+            }
+                
+        }
+        .btn-lunbo2{
+            .left-btn{
+                position: absolute;
+                width:26px;
+                height: 26px;
+                top: 75px;
+                left: 140px;
+                background: url("../../../images/prev.bmp") -19px no-repeat;
+            }
+            .rightbtn{
+                position: absolute;
+                width:46px;
+                height: 46px;
+                right: 140px;
+                top: 75px;
+                background: url("../../../images/next.bmp") -26px -20px no-repeat;
             }
         }
     }
     .shoulian {
-        background: #FFFFFF;
+        background: #ffffff;
         font-family: "Optima LT W01 Roman";
         .s-c {
             width: 960px;
