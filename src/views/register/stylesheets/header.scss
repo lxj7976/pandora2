@@ -1,0 +1,97 @@
+.header{
+    position:fixed;
+    z-index: 999;
+    width:100%;
+    background:#FFFFFF;
+    .header-top{
+        height: 100px;
+        
+        display: flex;
+        border-bottom: solid 1px #E5E5E5;
+        font-size: 13px;
+        .left{
+            a{}
+            ul {
+                margin-left:82px;
+                li{
+                    height:25px;
+                    margin-top:39px;
+                    float:left;
+                    margin-right:40px;
+                    span{
+                        padding-left:10px;
+                        margin-left:10px;
+                        line-height: 25px;
+                    }
+               }
+               li:nth-of-type(1) { background: url("../../../images/ch.jpg") no-repeat;}
+               li:nth-of-type(1) span {
+                   padding-left:30px;
+               }
+                li:nth-of-type(2) { background: url("../../../images/local.jpg") no-repeat;}
+            }
+            
+        }
+        .inner{
+            img{
+                margin-top:20px;
+                margin-left:190px;
+                margin-right:170px;
+                width:223px;
+            }
+        }
+        .right{
+            ul {
+                li{
+                    float:left;
+                    padding-top:40px;
+                    margin-right:40px;
+                    height:25px;
+                }
+                span{
+                    padding-left:30px;
+                }
+                li:nth-of-type(1) { background: url("../../../images/head_09.jpg") 0 40px no-repeat;}
+                li:nth-of-type(2) { background: url("../../../images/head_03.jpg") 0 40px no-repeat;}
+                li:nth-of-type(3) { background: url("../../../images/head_06.jpg") 0 40px no-repeat;}
+            }
+        }
+    }
+    .hide-desktop{
+        width:100%;
+        height:49px;
+        background:#FFFFFF;
+        font-size:13px;
+        border-bottom: solid 1px #E5E5E5;
+        box-shadow: 0px 2px 2px 0px rgba(48, 37, 52, 0.2);
+       .n-c{
+           nav{
+               background: #fff;
+               width: 82%;
+               float: left;
+               display: block;
+               ul.level-1 {
+                    font-family: optima lt w01 roman,MS PGothic;
+                    position: relative;
+                    margin: 0 auto;
+                    list-style: none;
+                    display: table;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    width: 100%;
+                    padding: 0;
+                    display: table-cell;
+                    text-align: center;
+                    position: relative;
+                    white-space: nowrap;
+                    border-left: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                    border-top: 1px solid transparent;
+                    margin-left: -1px;
+                    margin-top: -1px;
+                    padding-bottom: 3px;
+                }
+           }   
+        }
+    }
+}

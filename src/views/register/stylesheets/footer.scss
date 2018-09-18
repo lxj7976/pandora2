@@ -1,0 +1,120 @@
+.footer{
+    width: 100%;
+    
+    .inner-wrapper{
+        #linkFooter{
+            height: 332px;
+            background: #2d2132;
+            width:100%;
+            .content-asset{
+                width:960px;
+                margin: 0 auto;
+                .toplinksBlock{
+                    width: 230px;
+                    float: left;
+                    margin: 20px 0 0 10px;
+                    font-family: "Optima LT W01 Roman", MS PGothic;
+                    p{
+                        color: #dedde1;
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: 700;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        line-height: 14px;
+                    }
+                    ul{
+                        margin: 0 0 20px 0;
+                        padding: 0;
+                        line-height: 1.6em;
+                        li{
+                            list-style: none !important;
+                            margin: 0;
+                            padding: 0;
+                            line-height: 14px;
+                            font-weight: 400;
+                            font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                            line-height: 20px;
+                            font-size: 14px;
+                            a{
+                                color: #ffffff;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+                .connect-width-pandora {
+                    .col-connect-width-pandora ul {
+                        margin: 0 0 10px;
+                        padding: 0;
+                        width: 100%;
+                        li{
+                            width: 48%;
+                            list-style: none !important;
+                            margin: 0;
+                            padding: 0;
+                            line-height: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            float: left;
+                            a{
+                                font-size: 14px;
+                                font-family: optima lt w01 roman,Palatino Linotype,Book Antiqua,Palatino,serif;
+                                span{
+                                    padding-left: 25px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        li:nth-of-type(1) a span{
+                            background: url("../../../images/weibo.png") no-repeat left center;
+                        }
+                        li:nth-of-type(2) a span{
+                            background: url("../../../images/wechat.png") no-repeat left center;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    #socialMediaFooter{
+        width:100%;
+        height:46px;
+        background: #FFFFFF;
+        .inner-wrapper{
+            width:960px;
+            margin: 0 auto;
+            .row-allrights-icp{
+                text-align: center;
+                padding: 15px 0;
+                .all-rights{
+                    padding-right: 30px;
+                    font-size: 12px;
+                    color: #a6a6a6;
+                    text-align: center;
+                    padding: 15px 0;
+                    span{
+                        a{
+                            color: #333;
+                            outline: medium;
+                            overflow: hidden;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #operationStatementFooter{
+        background-color: #ececec;
+        width: 100%;
+        height: 42px;
+        text-align: center;
+        padding-top: 8px;
+        color: #706d75;
+        font-size: 11px;
+    }
+}
