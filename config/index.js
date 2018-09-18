@@ -44,8 +44,8 @@ const config = {
             index: './src/views/index/javascripts/index.js',
             vendor: './src/views/index/javascripts/vendor.js'
         },
-        'list': './src/views/list/javascripts/list.js',
-        'register': './src/views/register/javascripts/register.js'
+        'list': './src/views/list/javascripts/list.js'//register未引入
+        
     }
 } 
 
