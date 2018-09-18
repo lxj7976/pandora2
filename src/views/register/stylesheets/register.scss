@@ -1,0 +1,99 @@
+.page-content{
+    width:100%;
+    height:617px;
+    .page-c{
+        padding-top:50px;
+        padding-bottom:25px;
+        width:980px;
+        height:524px;
+        background: #ffffff;
+        margin:0 auto;
+        box-shadow: 0px 2px 2px 0px rgba(48, 37, 52, 0.2);
+        .page-box{
+            width:920px;
+            height: 502px;
+            margin: 0 auto;
+            a{
+                color:#333;
+            }
+            .left{
+                width:260px;
+                height:462px;
+                padding-left:55px;
+                padding-right:55px;
+                padding-top:35px;
+                margin-left: 50px;
+                float: left;
+                text-align: center !important;
+                a:nth-of-type(1){
+                    letter-spacing: 0.1em;
+                    padding-bottom: 18px !important;
+                    font-family: "Optima LT W01 Roman", "Palatino Linotype", "Book Antiqua", "Palatino", "serif" !important;
+                    font-size: 16px !important;
+                    color: #333 !important;
+                   
+                }
+            }
+            .right{
+                float: right;
+                padding-right:70px;
+                .box-img{
+                    position: relative;
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                    a:nth-of-type(1){
+                        position: absolute;
+                        top: 7%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        color: #000 !important;
+                        font-size: 19px !important;
+                        text-transform: uppercase;
+                        text-align: center !important;
+                        font-family: "Optima LT W01 Roman", "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+                    }
+                    a:nth-of-type(2){
+                        text-align: center !important;
+                        position: absolute;
+                        top: 23%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        color: #000 !important;
+                        font-size: 13px !important;
+                        width: 77%;
+                        line-height: 1.1 !important;
+                        cursor: pointer;
+                    }
+                    a:nth-of-type(3){
+                        text-align: center;
+                        box-sizing: border-box;
+                        text-decoration: none;
+                        font-size: 15px;
+                        cursor: pointer;
+                        padding: 14px 0 !important;
+                        max-height: 50px;
+                        position: absolute;
+                        top: 78%;
+                        right: 0;
+                        border: 1px solid #000;
+                        background-color: #000;
+                        color: #fff !important;
+                        text-transform: uppercase;
+                        left: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                        max-width: 260px;
+                        letter-spacing: 0.1em;
+                    }
+                }
+                
+            }
+        }
+    }
+}
