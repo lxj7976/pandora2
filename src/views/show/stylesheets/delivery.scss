@@ -1,0 +1,208 @@
+//包邮
+.wrapper-inside{
+    // width:100%;
+    font-family: "Optima LT W01 Roman", MS PGothic;
+    color: #333;
+    .pdp-top-content {
+        padding: 0 10px;
+        display: inline-block;
+        margin: 0 auto;
+        width: 960px;
+        height: 50px;
+        background: #fff;
+        font-size: 11px;
+        box-sizing: border-box;
+        margin: 10px 0 12px 0;
+        clear: both;
+        ul{
+            padding: 10px 0;
+            border: none !important;
+            width: 100%;
+            display: inline-block;
+            margin: 0 140px;
+            li{
+                height: 30px;
+                display: table;
+                width: 310px;
+                float: left;
+                padding: 0 20px;
+                box-sizing: border-box;
+                text-align: center;
+                border-right: 1px solid #ededed;
+                p {
+                    color: #6c646e;
+                    text-transform: uppercase;
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-weight: 700;
+                    font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                    line-height: 16px;
+                    a {
+                        color: #190c26;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        width: 100%;
+                        display: inline-block;
+                        line-height: 13px;
+                        outline: 0;
+                        font-weight: normal;
+                        color: #333;
+                    }
+                }
+            }
+            li:nth-of-type(3){
+                border: 0;
+            }
+        }
+    }
+}
+//主体
+.main{
+    // width:100%;
+    .primary{
+        width:960px;
+        height: 1043px;
+        background: pink;
+        margin: 0 auto;
+        padding:10px;
+        //小标题
+        .breadcrumb {
+            font-size: 1.2em;
+            border-top: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+            height: auto;
+            padding-left: 10px;
+            background-color: #fafafa;
+            clear: both;
+            a{
+                font-size: 12px;
+                color: #706d75;
+                line-height: 28px;
+            }
+            .next-link {
+                font-size: 12px;
+                color: #706d75;
+                line-height: 28px;
+                margin-left: 3px;
+            }
+            .current-breadcrumb {
+                display: none;
+            }
+        }
+        //放大镜
+        .product-col-1{
+            float: left;
+            width: 493px;
+            height:455px;
+            background: yellow;
+            margin-left: 0;
+            text-align: center;
+            position: relative;
+            font-family: "Optima LT W01 Roman", MS PGothic;
+            color:#333;
+            font-size:12px;
+            //左边小图片
+            .product-thumbnails {
+                padding: 0;
+                float: left;
+                width: 80px;
+                text-align: center;
+                padding-top: 21px;
+                margin-top: 33px;
+                .hide-desktop {
+                    display: block;
+                    ul {
+                        text-align: center;
+                        list-style: none outside none;
+                        margin: 0;
+                        padding: 0;
+                        .thumb {
+                            border-top: 5px solid #fff;
+                            a {
+                                color: #7b7b7b;
+                                .selected img {
+                                    border: 1px #999 solid;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //右边原图
+            .primary-image {
+                padding: 0;
+                text-align: center;
+                width: 400px;
+                display: inline-block;
+                min-height: 400px;
+                margin: 30px auto 17px auto;
+                border: 1px solid #fff;
+                position: relative;
+                span {
+                    display: none;
+                    background: #999;
+                    color: #fff;
+                    height: 18px;
+                    line-height: 18px;
+                    width: 100%;
+                    overflow: hidden;
+                    text-align: center;
+                    font-size: 10px;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 120;
+                    opacity: 0.6;
+                }
+                .flagTop {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    right: 50%;
+                    z-index: 9;
+                    margin-left: -50%;
+                    margin-right: -50%;
+                    .flagValue {
+                        color: #afaab0;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        font-size: 35px;
+                        position: absolute;
+                        width: 100%;
+                        z-index: 2;
+                        text-transform: uppercase;
+                        left: 0;
+                        top: 10px;
+                    }
+                }
+                h2 {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+                .visually-hidden {
+                    border: 0 none;
+                    height: 1px;
+                    margin: -1px;
+                    overflow: hidden;
+                    padding: 0;
+                    position: absolute;
+                    width: 1px;
+                }
+                .product-image-zoom {
+                    position: relative;
+                    display: inline-block;
+                    width: 400px;
+                    a {
+                        color: #7b7b7b;
+                        cursor: crosshair;
+                        display: block;
+                        img {
+                            background: #FFFFFF;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -16,7 +16,7 @@ const config = {
         port: 8000,
         livereload: true 
     },
-    pages: [ 'index', 'list', 'car' ,'register'],
+    pages: [ 'index', 'list', 'car' ,'register', 'show'],
     cssoptions: {// css配置
         'index': { // index页面的css
             'common': [ // index页面处理之后的common.min.css需要合并的文件
@@ -37,6 +37,12 @@ const config = {
                 './src/stylesheets/reset.scss',
                 './src/views/register/*/*.scss'
             ]
+        },
+        'show': {
+            'show': [
+                './src/stylesheets/reset.scss',
+                './src/views/show/*/*.scss'
+            ]
         }
     },
     jsoptions: {// js配置
@@ -45,7 +51,8 @@ const config = {
             vendor: './src/views/index/javascripts/vendor.js'
         },
         'list': './src/views/list/javascripts/list.js',//register未引入
-        'register': './src/views/register/javascripts/register.js'
+        'register': './src/views/register/javascripts/register.js',
+        'show': './src/views/show/javascripts/show.js'
     }
 } 
 
