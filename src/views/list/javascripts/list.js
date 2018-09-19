@@ -2,9 +2,37 @@
 require('./modules/a')
 
 console.log(' this is list ')
+function $id(id){
+    return document.getElementById(id);
+}
+
+//验证邮箱
+var flagEmail=null;
+$id("email").onblur=function(){
+    var Email=$id("email").value;
+    var regEmail = /^[a-z0-9]+@\w+\.\w+$/;
+    if(this.value==""){
+        $id("s7").innerHTML="必填字段";
+        flagEmail=false;
+    }else if(regEmail.test(Email)){
+        $id("s7").innerHTML="";
+        flagEmail=true;
+    }
+}
+//验证密码
+$id("pwd").onblur=function(e){
+    //定义三个正则表示包含数字 字母 特殊字符
+    var _regNum=/\d+/;
+    var _regLetter=/[a-z]+/i;
+    var _regChar=/[^0-9a-z]+/i;
+    var str=this.value;
+    
+    if(this.value==""){
+        $id("s3").innerHTML="必填字段";
+    }
+}
 var loginBtn=document.getElementById("submit");
-var txtName=document.getElementById("email");
-var tpwd=document.getElementById("pwd");
+var flaglogin=null;
 loginBtn.onclick = function(){
     //获取cookie
     var str = getCookie("userlist");
@@ -12,16 +40,21 @@ loginBtn.onclick = function(){
     var cookieName = arr[0].username;
     var cookiePwd = arr[0].userpwd;
     //获取用户输入的用户名和密码 :
-    var tname = txtName.value;
-    var tpwd = txtPwd.value;
-    
+    var tname = $id("email").value;
+    var tpwd = $id("pwd").value;
+    console.log(cookieName);
+    console.log(cookiePwd);
+
     if( cookieName == tname && cookiePwd == tpwd ){
         alert("登录成功");
-        location.href="/index/index.html";
+        location.href="page.html";//无法实现跳转
     }else{
-        $id("s3").innerHTML="无效的登录名或密码";
+        alert("密码或账户无效");
+        $id("s4").innerHTML="密码或账户无效";
     }
 }
+
+
 
 function getCookie(key){
     var str = document.cookie;
