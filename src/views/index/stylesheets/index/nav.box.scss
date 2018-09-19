@@ -12,6 +12,7 @@
     background: #fff;
     text-align: left;
     overflow: hidden;
+    border-top: none !important;
     .flymenu_left {
         display: inline-block;
         vertical-align: top;
@@ -20,6 +21,7 @@
         li{
             border-bottom: 1px solid #ededed;
             text-align: left;
+            
             a{
                 display: block;
                 padding: 5px 20px;

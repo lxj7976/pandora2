@@ -69,7 +69,30 @@
         }
         .header-search{
             .search-input-field{
-                display:none;
+                display: none;
+                position: absolute;
+                left: 985px;
+                top: 101px;
+                width: 168px;
+                height: 49px;
+                outline: none;
+                border: 0;
+                background: #f1f1f3;
+            }
+            i{
+                width: 30px;
+                height: 49px;
+                // background: #f1f1f3;
+                background: url(../../images/close.jpg);
+                position: absolute;
+                left: 1153px;
+                top: 101px;
+                display: none;
+            }
+            .searchimg{
+                position: absolute;
+                left: 1147px;
+                top: 102px;
             }
         }
     }
