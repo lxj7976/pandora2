@@ -193,40 +193,93 @@
                         margin: 5px 0;
                         line-height: 18px;
                     }
-                    .product-add-to-cart{
-                        background: none;
-                        clear: both;
-                        margin: 15px 0 1em 0;
-                        padding: 1rem 0 0;
-                        input{
-                            background: none;
-                            clear: both;
-                            margin: 15px 0 1em 0;
-                            padding: 1rem 0 0;
-                        }
-                        h2 {
-                            font-size: 1.3em;
-                        }
-                        form {
-                            display: block;
-                            margin-top: 0em;
-                            fieldset {
-                                border: 0 none;
-                                margin: 0;
-                                padding: 0;
-                                .visually-hidden {
-                                    border: 0 none;
-                                    height: 1px;
-                                    margin: -1px;
-                                    overflow: hidden;
-                                    padding: 0;
-                                    position: absolute;
-                                    width: 1px;
-                                }
-                            }
-                        }
-                    }
+                    
 
+                }
+                .price{
+                    width: 100%;
+                    height: 26px;
+                    background: yellow;
+                    margin-top: 37px;
+                    .pn{
+                        margin-bottom: 0.5em;
+                        font-size: 20px;
+                        color: #190c26;
+                        float: left;
+                        font-weight: 300;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                    }
+                    .size{
+                        display: table-cell;
+                        vertical-align: middle;
+                        font-size: 10px;
+                        color: #190c26;
+                        float: right;
+                    }
+                }
+                .add-car{
+                    width:100%;
+                    height: 40px;
+                    background: green;
+                    .num-box{
+                        width:139px;
+                        height: 33px;
+                        background:#fafafa;
+                        .number{
+                            margin: 3px 0 0 0;
+                            font-size: 15px;
+                            color: #78737D;
+                            float: left;
+                            width: auto;
+                            text-transform: capitalize;
+                            padding-right: 9px;
+                            font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                            padding: 0;
+                            text-align: left;
+                        }
+                        .jiannum{
+                            width: 28px;
+                            text-align: center;
+                            height: 28px;
+                            font-size: 19px;
+                            border-radius: 8px 0 0 8px;
+                            line-height: 29px;
+                            background: #f1f1f3;
+                            border: 1px solid #dadadc;
+                            font-weight: 700;
+                            float: left;
+                            text-decoration: none;
+                        }
+                        input{
+                            float: left;
+                            width: 22px;
+                            height: 24px;
+                            position: relative;
+                            padding: 2px;
+                            text-align: center;
+                            margin: 0;
+                            top: 0;
+                            background: #f1f1f3;
+                            border-radius: 0;
+                            border: 1px solid #dadadc;
+                        }
+                        .addnum{
+                            display: inline-block;
+                            width: 28px;
+                            text-align: center;
+                            height: 28px;
+                            font-size: 19px;
+                            border-radius: 0 8px 8px 0;
+                            line-height: 29px;
+                            background: #f1f1f3;
+                            border: 1px solid #dadadc;
+                            font-weight: 700;
+                            float: left;
+                            text-decoration: none;
+                        }
+
+                    }
+                    
                 }
             }
         }
