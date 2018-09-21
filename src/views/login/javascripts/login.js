@@ -89,14 +89,11 @@ $id("i").onclick=function(){
 	},500)
 }
 
-
-
-
-
-
 function $id(id){
     return document.getElementById(id);
 }
+
+//cookie
 
 //验证邮箱
 var flagEmail=null;
@@ -109,9 +106,6 @@ $id("email").onblur=function(){
     }else if(regEmail.test(Email)){
         $id("s7").innerHTML="";
         flagEmail=true;
-    }else{
-        $id("s7").innerHTML="电子邮箱地址无效";
-        flagEmail=false;
     }
 }
 //验证密码
@@ -122,84 +116,50 @@ $id("pwd").onblur=function(e){
     var _regChar=/[^0-9a-z]+/i;
     var str=this.value;
     
-    if(str.length<5){
-        $id("s3").innerHTML="密码不满足复杂度要求";
-    }else{
-        $id("s3").innerHTML="";
+    if(this.value==""){
+        $id("s3").innerHTML="必填字段";
     }
 }
-//确认密码
-var flagQpwd=null;
-$id("qpwd").onblur=function(){
-    var qpwd=$id("qpwd").value;
-    if(!qpwd==""){
-    if(qpwd==$id("pwd").value){
-            $id("s4").style.display="none";
-            $id("s4").innerHTML="";
-            flagQpwd=true;
-        }else{
-            $id("s4").innerHTML="密码不一致";
-            flagQpwd=false;
+var loginBtn=document.getElementById("submit");
+var flaglogin=null;
+loginBtn.onclick = function(){
+    //获取cookie
+    var str = getCookie("userlist");
+    var arr = JSON.parse( str );
+    var cookieName = arr[0].username;
+    var cookiePwd = arr[0].userpwd;
+    //获取用户输入的用户名和密码 :
+    var tname = $id("email").value;
+    var tpwd = $id("pwd").value;
+    console.log(cookieName);
+    console.log(cookiePwd);
+
+    if( cookieName == tname && cookiePwd == tpwd ){
+        alert("登录成功");
+        location.href="page.html";//无法实现跳转
+    }else{
+        alert("密码或账户无效");
+        $id("s4").innerHTML="密码或账户无效";
+    }
+}
+
+
+
+function getCookie(key){
+    var str = document.cookie;
+    if( str ){ //如果cookie存在  根据key取对应的值
+        str = str.replace( /\s/g ,"");//去掉cookie中的空格
+        var arr = str.split(";");//将字符串拆成数组
+        for( var i = 0 ; i < arr.length ; i++ ){
+            var item = arr[i].split("=");
+            if( item[0] == key ){
+                return item[1];
+            }
         }
+        //循环结束后 如果没有找到对应的key   返回""
+        return "";
     }
-   
+    //cookie 不存在  返回""
+    return "";
 }
-
-var fm=document.querySelector("form");
-fm.onsubmit=function(){
-    if(!flagQpwd){
-        return false;
-    }else{
-        alert("创建成功");
-    }
-}
-var saveBtn = document.querySelector("#submit");
-var txtName = document.querySelector("#email");
-var txtPwd = document.querySelector("#pwd");
-var arr = []; //[{},{},{},{},...] 
-saveBtn.onclick = function(){
-    var strName = txtName.value;
-    var strPwd = txtPwd.value;
-    //将用户名和密码作为整体对象 存入到数组中
-    arr.push( {
-        "username":strName,
-        "userpwd":strPwd
-    } )
-    
-    JSON.stringify()
-    //将数组存入到cookie中
-    var now = new Date();
-	now.setDate( now.getDate() + 10 );
-    document.cookie = "userlist=" + JSON.stringify( arr )+";expires="+now + ";Path=" + escape("/");
-    // location.href = "/list/list.html";
-    // if(flagEmail&&flagQpwd){
-    //     location.href = "/list/list.html";
-    // }
-}
-
-
-
-
-
-// //存cookie的函数
-// function setCookie(key,value,days){
-// 	var now = new Date();
-// 	now.setTime(now.getTime() + days*24*60*60*1000 ) 
-// 	document.cookie=key+"="+value + ";expires="+now+";Path="+escape("/");
-// }
-// //cookie存数据
-// var arr=[];
-// $id("submit").click(function(){
-//     var strName=$id("email").value();
-//     var strPwd=$id("pwd").value();
-//     arr.push({
-//         "username":strName,
-//         "userpwd":strPwd
-//     })
-//    setCookie("userlist",JSON.stringify(arr),2);
-   
-//    console.log(arr);
-//    console.log("userlist");
-// })
-
 
