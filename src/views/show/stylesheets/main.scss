@@ -3,8 +3,8 @@
     // width:100%;
     .primary{
         width:960px;
-        height: 1043px;
-        background: pink;
+        height: 700px;
+        background:#ffffff;
         margin: 0 auto;
         padding:10px;
         //小标题
@@ -36,7 +36,6 @@
             float: left;
             width: 493px;
             height:455px;
-            background: yellow;
             margin-left: 0;
             text-align: center;
             position: relative;
@@ -119,8 +118,6 @@
                                 background: #FFFFFF;
                             } 
                         }
-                        
-
                     }
                 }
                 h2 {
@@ -155,8 +152,11 @@
         //右边详情
         .product-col-2{
             float:left;
-            width: 446px;
             height: 608px;
+            float: right;
+            width: 445px;
+            border-left: 1px solid #ededed;
+            padding-bottom: 20px;
             #product-content {
                 margin: 0 35px 0 34px;
                 font-family: "Optima LT W01 Roman", MS PGothic;
@@ -165,7 +165,7 @@
                 width: 376px;
                 height: 223px;
                 overflow: hidden;
-                background: skyblue;
+                margin-bottom: 50px;
                 .pdp-title-product{
                     //h1
                     .product-name {
@@ -199,7 +199,6 @@
                 .price{
                     width: 100%;
                     height: 26px;
-                    background: yellow;
                     margin-top: 37px;
                     .pn{
                         margin-bottom: 0.5em;
@@ -220,11 +219,12 @@
                 .add-car{
                     width:100%;
                     height: 40px;
-                    background: green;
+                    position: relative;
                     .num-box{
                         width:139px;
                         height: 33px;
                         background:#fafafa;
+                        margin-top: 65px;
                         .number{
                             margin: 3px 0 0 0;
                             font-size: 15px;
@@ -244,7 +244,7 @@
                             font-size: 19px;
                             border-radius: 8px 0 0 8px;
                             line-height: 29px;
-                            background: #f1f1f3;
+                            background:url("../../../images/jian.bmp") 4px no-repeat #f1f1f3;
                             border: 1px solid #dadadc;
                             font-weight: 700;
                             float: left;
@@ -271,7 +271,7 @@
                             font-size: 19px;
                             border-radius: 0 8px 8px 0;
                             line-height: 29px;
-                            background: #f1f1f3;
+                            background:url("../../../images/add.bmp") 3px 3px no-repeat #f1f1f3;
                             border: 1px solid #dadadc;
                             font-weight: 700;
                             float: left;
@@ -279,7 +279,87 @@
                         }
 
                     }
+                    .car{
+                        float: right;
+                        font-size: 1.2rem;
+                        height: 40px;
+                        padding: 0;
+                        border: none;
+                        width: 235px;
+                        border-radius: 4px;
+                        font-weight: 700;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        font-size: 14px;
+                        background:url("../../../images/add-car.bmp") no-repeat;
+                        position: absolute;
+                        left: 143px;
+                        top: -4px;
+
+                    }
                     
+                }
+            }
+            .product-main-attributes{
+                .sections{
+                    border-top: 0px solid #ededed;
+                    height: auto;
+                    border-bottom: 1px solid #ededed;
+                    width: 100%;
+                    li{
+                        background: #9d9d9d;
+                        display: inline-block;
+                        color: #fff;
+                        cursor: default;
+                        font-weight: 700;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        padding: 10px;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        margin: 8px 0px 0 34px;
+                        white-space: normal;
+                    }
+                }
+                .section-content{
+                    padding: 30px 35px 0 34px;
+                    .attribute{
+                        margin: 0;
+                        overflow: hidden;
+                        padding: 0;
+                        position: relative;
+                        line-height: 20px;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                        font-weight: normal;
+                        color: #78737D;
+                        font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        .label {
+                            clear: both;
+                            float: left;
+                            margin: 0;
+                            padding: 0;
+                            width: 94px;
+                            text-transform: capitalize;
+                            font: inherit;
+                            font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                        }
+                        .value {
+                            float: left;
+                            width: 75%;
+                        }
+                    }
+                }
+                .description{
+                    padding: 20px 0 30px 35px;
+                    display: inline-block;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #78737D;
+                    border-bottom: 1px solid #ededed;
+                    font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                    
+                }
+                .product-social-icons{
+
                 }
             }
         }
