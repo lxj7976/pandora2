@@ -1,0 +1,34 @@
+{
+    "code": 200,
+    "error": null,
+    "data": [
+        {
+            "good_id": 0,
+            "good_type":"新品",
+            "good_name": "活力谷物安全链",
+            "good_price": "398 CNY",
+            "good_image": "../../../images/guwu.jpg"
+        },
+        {
+            "good_id": 2,
+            "good_type":"新品",
+            "good_name": "活力谷物安全链",
+            "good_price": "398 CNY",
+            "good_image": "../../../images/guwu.jpg"
+        },
+        {
+            "good_id": 2,
+            "good_type":"新品",
+            "good_name": "活力谷物安全链",
+            "good_price": "398 CNY",
+            "good_image": "../../../images/guwu.jpg"
+        },
+        {
+            "good_id": 3,
+            "good_type":"新品",
+            "good_name": "活力谷物安全链",
+            "good_price": "398 CNY",
+            "good_image": "../../../images/guwu.jpg"
+        }
+    ]
+}

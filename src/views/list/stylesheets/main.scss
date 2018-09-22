@@ -1,0 +1,238 @@
+//主体
+.main{
+    // width:100%;
+    .primary{
+        width:960px;
+        height: auto;
+        background:#ffffff;
+        margin: 0 auto;
+        padding:10px;
+        overflow: hidden;
+        //小标题
+        .breadcrumb {
+            font-size: 1.2em;
+            border-top: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+            height: auto;
+            padding-left: 10px;
+            background-color: #fafafa;
+            clear: both;
+            a{
+                font-size: 12px;
+                color: #706d75;
+                line-height: 28px;
+            }
+            .next-link {
+                font-size: 12px;
+                color: #706d75;
+                line-height: 28px;
+                margin-left: 3px;
+            }
+            .current-breadcrumb {
+                display: none;
+            }
+        }
+        //左边
+        .left{
+            float: left;
+            width: 240px;
+            padding-right: 5px;
+            border-right: none;
+            padding-top: 10px;
+            .xuangou{
+                letter-spacing: normal;
+                line-height: 32px;
+                text-transform: uppercase;
+                background: 0 0;
+                color: #000;
+                font-style: normal;
+                font-size: 17px;
+                font-weight: 400;
+                padding: 15px 0 5px;
+                margin: 0 12px 0 0;
+                border-bottom: 1px solid #c4c0c7;
+                font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+            }
+            .list-box{
+                position: relative;
+                .toggle{
+                    font-size: 13px;
+                    border-bottom: 1px solid #eeeeee;
+                    color: #190c26;
+                    cursor: pointer;
+                    line-height: 13px;
+                    margin: 0 12px 0 0;
+                    padding: 15px 0 10px;
+                    letter-spacing: normal;
+                    font-weight: normal;
+                    .name{
+                        background: none;
+                        padding: 0;
+                    }
+                    .tu{
+                        width: 12px;
+                        height: 12px;
+                        background: url(../../../images/top.bmp) no-repeat;
+                        float: right;
+                        background: url("../../../images/top.bmp") no-repeat;
+                    }
+
+                }
+                .list{
+                    li {
+                        padding: 3px 2px 5px 5px;
+                        a{
+                            color: #7b7b7b;
+                            font-size: 13px;
+                            line-height: 18px;
+                            text-transform: uppercase;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .range{
+                    background: 0 0;
+                    padding: 17px 0 0;
+                    color: #000;
+                    font-size: 15px;
+                    line-height: 29px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    margin: 9px 12px 0 0;
+                    border-bottom: 1px solid #c4c0c7;
+                    border-top: 1px solid #eeeeee;
+                }
+            }
+        }
+        .right{
+            width:710px;
+            float: right;
+            .head{
+                margin: 15px 0;
+                width: 100%;
+                display: inline-block;
+                .content{
+                    width: 40%;
+                    font-size: 12px;
+                    font-weight: normal;
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    span{
+                        display: inline-block;
+                        font: inherit;
+                        padding: 7px 0 0 0;
+                        width: auto;
+                        margin-right: 5px;
+                    }
+                    .box-new{
+                        float: right;
+                        background: #fff;
+                        border: 1px solid #e0e0e5;
+                        width: 175px;
+                        height: 28px;
+                        border-radius:5px;
+                        margin-right: 40px;
+                   
+                        a{
+                            
+                            line-height: 28px;
+                            font-size: 12px;
+                            font-weight: normal;
+                            border-radius:5px;
+                            outline: none;
+                            text-decoration: none;
+                            color: #555555 !important;
+                            padding-left: 0px;
+                            text-indent: 10px;
+                            font-weight: normal;
+                            background: transparent;
+                            
+                        }
+                    }
+                    
+                    button{
+                        outline: none;
+                        border:0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        height: 28px;
+                        position: absolute;
+                        right: 41px;
+                        top: 1px;
+                        width: 28px;
+                        z-index: 1;
+                        background-color: #f1f2f5;
+                        border-left: 1px solid #c5c5c5;
+                        background:url("../../../images/blue-down.bmp") no-repeat #f1f2f5;
+                    }
+                }
+            }
+            .production-box{
+                border-top: 1px solid #ededed;
+                .good-list{
+                    li{
+                        width:235px;
+                        float: left;
+                        text-align: center;
+                        border-right: 1px solid #ededed;
+                        border-bottom: 1px solid #ededed;
+                        position: relative;
+                        img{
+                            width:120px;
+                        }
+                        .new-product{
+                            width: 100%;
+                            height: 30px;
+                            background: url("../../../images/green.bmp") center no-repeat;
+                            font-style: italic;
+                        }
+                        .name{
+                            color: #7b7b7b;
+                            font-size: 14px;
+                            font-family: "Optima LT W01 Roman", MS PGothic;
+                            font-style: italic;
+                        }
+                        .price{
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 12px;
+                            color: #999;
+                            font-family: "Optima LT W01 Roman", MS PGothic;
+                        }
+                        #quick{
+                            width: 80px;
+                            color: #190c26;
+                            text-transform: capitalize;
+                            white-space: nowrap;
+                            position: absolute;
+                            height: 21px;
+                            line-height: 18px;
+                            top: 91px;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                            border-radius: 5px;
+                            padding: 5px 16px 0 16px;
+                            border: 1px solid #e4e3e5;
+                            background: #e4e3e5;
+                        }
+                        a{
+                            font-size: 12px;
+                        }
+                        &:hover .name{
+                            text-decoration: underline;
+                        }
+                        &:hover #quick{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
