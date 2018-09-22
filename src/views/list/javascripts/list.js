@@ -280,3 +280,14 @@ $(function () {
 	// }
 })
 
+//显示快速查看
+$(".conetent img ").bind({
+	onmouseenter: function(){
+		alert();
+		$("#quick").css("display", "block");
+	},
+	onmouseleave: function(){
+		$("#quick").css("display", "none");
+	}
+})
+//显示与隐藏

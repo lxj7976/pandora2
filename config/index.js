@@ -49,6 +49,12 @@ const config = {
                 './src/stylesheets/reset.scss',
                 './src/views/login/*/*.scss'
             ]
+        },
+        'car': {
+            'car': [
+                './src/stylesheets/reset.scss',
+                './src/views/car/*/*.scss'
+            ]
         }
     },
     jsoptions: {// js配置
@@ -59,7 +65,8 @@ const config = {
         'list': './src/views/list/javascripts/list.js',//register未引入
         'register': './src/views/register/javascripts/register.js',
         'show': './src/views/show/javascripts/show.js',
-        'login': './src/views/login/javascripts/login.js'
+        'login': './src/views/login/javascripts/login.js',
+        'car': './src/views/car/javascripts/car.js'
     }
 } 
 

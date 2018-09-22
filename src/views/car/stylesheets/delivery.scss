@@ -1,0 +1,58 @@
+//包邮
+.wrapper-inside{
+    // width:100%;
+    font-family: "Optima LT W01 Roman", MS PGothic;
+    color: #333;
+    .pdp-top-content {
+        padding: 0 10px;
+        display: inline-block;
+        margin: 0 auto;
+        width: 960px;
+        height: 50px;
+        background: #fff;
+        font-size: 11px;
+        box-sizing: border-box;
+        margin: 10px 0 12px 0;
+        clear: both;
+        ul{
+            padding: 10px 0;
+            border: none !important;
+            width: 100%;
+            display: inline-block;
+            margin: 0 140px;
+            li{
+                height: 30px;
+                display: table;
+                width: 310px;
+                float: left;
+                padding: 0 20px;
+                box-sizing: border-box;
+                text-align: center;
+                border-right: 1px solid #ededed;
+                p {
+                    color: #6c646e;
+                    text-transform: uppercase;
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-weight: 700;
+                    font-family: "Optima LT W01 Roman", Palatino Linotype, Book Antiqua, Palatino, serif;
+                    line-height: 16px;
+                    a {
+                        color: #190c26;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        width: 100%;
+                        display: inline-block;
+                        line-height: 13px;
+                        outline: 0;
+                        font-weight: normal;
+                        color: #333;
+                    }
+                }
+            }
+            li:nth-of-type(3){
+                border: 0;
+            }
+        }
+    }
+}
